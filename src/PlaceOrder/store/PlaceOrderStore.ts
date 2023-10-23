@@ -10,15 +10,13 @@ export class PlaceOrderStore {
   @observable profit: number = 0;
   @observable targetPrice: number = 0;
   @observable amountProfit: number = 0;
-  @observable projectedProfit: number = 0
 
   @computed get total(): number {
     return this.price * this.amount;
   }
 
-  @action.bound
-  setProjectedProfit(): void {
-    this.projectedProfit = this.activeOrderSide === 'buy'
+  @computed get projectedProfit(): number {
+    return this.activeOrderSide === 'buy'
     ? this.amountProfit * (this.targetPrice - this.price)
     : this.amountProfit * (this.price - this.targetPrice)
   }

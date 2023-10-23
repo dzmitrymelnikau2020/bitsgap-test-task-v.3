@@ -1,7 +1,6 @@
 import React from "react";
-import cn from 'classnames';
 
-import { Icon, InputAdornment } from '@material-ui/core';
+import { Icon } from '@material-ui/core';
 import { DeleteIcon } from "./DeleteIcon/DeleteIcon";
 
 import { NumberInput } from "../NumberInput/NumberInput";

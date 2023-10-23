@@ -3,8 +3,6 @@ import React, { createContext, useContext } from "react";
 import { PlaceOrderStore } from "./store/PlaceOrderStore";
 import { ProfitTargetsStore } from "./store/ProfitTargetsStore";
 import { ProfitTargetStore } from "./store/ProfitTargetStore";
-
-//const store = new PlaceOrderStore();
 class RootStore {
   placeOrderStore = new PlaceOrderStore();
   profitTargetsStore = new ProfitTargetsStore();

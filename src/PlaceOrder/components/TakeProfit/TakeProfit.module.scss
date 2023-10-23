@@ -9,16 +9,14 @@
       background-color: #2B273B;
     }
     
-
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.03);
+    }
+    
     .content {
       display: flex;
       justify-content: space-between;
       border-radius: 8px;
-
-
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.03);
-      }
     }
     
     .label {

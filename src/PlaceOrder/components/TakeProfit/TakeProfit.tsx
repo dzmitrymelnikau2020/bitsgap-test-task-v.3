@@ -26,7 +26,6 @@ export const TakeProfit = observer(() => {
     amountProfit,
     setAmountProfit,
     projectedProfit,
-    setProjectedProfit,
   } = placeOrderStore;
 
   const {
@@ -44,7 +43,6 @@ export const TakeProfit = observer(() => {
     setProfit(profit + 2);
     const index = `${Math.floor(Math.random() * 100)}-${profit}`;
     handleChangeTargetPrice();
-    setProjectedProfit()
     const value = {
       index,
       profit,

@@ -13,8 +13,6 @@ import { QUOTE_CURRENCY } from "../../constants";
 import { ProfitTarget } from "../ProfitTarget/ProfitTarget";
 import { ProfitTargetInput } from "../ProfitTarget/ProfitTargetInput";
 
-import cn from 'classnames';
-
 import styles from "./ProfitTargets.module.scss";
 
 type Props = {
@@ -29,7 +27,7 @@ export const ProfitTargets = observer(({ handlePush }: Props) => {
     profitTargets,
     deleteProfitTarget,
     profitTargetsLength,
-    projectedProfit,
+    projectedProfits,
    } = profitTargetsStore;
 
   const handleDelete = (idx: string): void => {
@@ -66,7 +64,7 @@ export const ProfitTargets = observer(({ handlePush }: Props) => {
       }
       <div className={styles.projectedProfit}>
         <div>Projected profit</div>
-        <div>{projectedProfit} {QUOTE_CURRENCY}</div>
+        <div>{projectedProfits} {QUOTE_CURRENCY}</div>
       </div>
     </div>
   )
