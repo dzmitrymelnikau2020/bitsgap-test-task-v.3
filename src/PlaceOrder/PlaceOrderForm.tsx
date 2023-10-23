@@ -11,6 +11,7 @@ import { TakeProfit } from "./components/TakeProfit/TakeProfit";
 import styles from "./PlaceOrderForm.module.scss";
 
 export const PlaceOrderForm = observer(() => {
+  const { placeOrderStore } = useStore()
   const {
     activeOrderSide,
     price,
@@ -20,7 +21,7 @@ export const PlaceOrderForm = observer(() => {
     setAmount,
     setTotal,
     setOrderSide
-  } = useStore();
+  } = placeOrderStore;
 
   return (
     <form className={styles.root}>
@@ -38,7 +39,6 @@ export const PlaceOrderForm = observer(() => {
         <NumberInput
           label={`Price, ${QUOTE_CURRENCY}`}
           value={price}
-          variant="underlined"
           onChange={(value) => setPrice(Number(value))}
         />
         <NumberInput

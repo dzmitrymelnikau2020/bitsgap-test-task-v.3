@@ -1,0 +1,43 @@
+.root {
+  display: grid;
+  row-gap: 8px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0px;
+  color: #A2A7B9;
+
+  .cellProfit {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+
+    .count {
+        width: 55px;
+    }
+
+    .target {
+        width: 125px;
+    }
+
+    .amount {
+        width: 80px;
+    }
+  }
+
+  .addProfitTarget {
+    display: flex;
+
+    .iconLabel {
+      color: #0078FF;
+      margin-top: 3px;
+    }
+  }
+  .projectedProfit {
+    display: flex;
+    justify-content: space-between;
+  }
+}

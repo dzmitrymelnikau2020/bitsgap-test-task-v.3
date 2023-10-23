@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color:  #1D1A28;
+  padding: 10px;
+
+    &.isChecked {
+      background-color: #2B273B;
+    }
+    
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 8px;
+
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.03);
+      }
+    }
+    
+    .label {
+      font-size: 12px;
+      font-weight: 500;
+      color: #A2A7B9;
+      line-height: 18px;
+      letter-spacing: 0.25px;
+      text-align: left;
+      display: flex;
+      align-items: left;
+      column-gap: 8px;
+    }
+}
+

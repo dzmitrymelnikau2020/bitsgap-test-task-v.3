@@ -1,0 +1,37 @@
+.root {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0px;
+
+    .cellProfit {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      color: #A2A7B9;
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      letter-spacing: 0px;
+      border-bottom: 1px solid #A2A7B9;
+    
+        .count {
+          width: 55px;
+        }
+    
+        .target {
+          width: 125px;
+        }
+    
+        .amount {
+          width: 62px;
+        }
+
+        .iconDelete {
+          padding-top: 9px;
+}
+    }
+}
+
+

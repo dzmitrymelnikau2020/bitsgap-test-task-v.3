@@ -6,6 +6,7 @@ import styles from "./Tooltip.module.scss";
 type Props = {
   message: React.ReactNode;
   children: TooltipProps["children"];
+  isError?: boolean;
   open?: boolean;
   placement?: TooltipProps["placement"];
   interactive?: boolean;

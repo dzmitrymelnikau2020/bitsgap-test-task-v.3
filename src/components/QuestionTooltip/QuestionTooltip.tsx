@@ -7,6 +7,7 @@ import styles from "./QuestionTooltip.module.scss";
 
 type Props = {
   message: ReactNode;
+  isError?: boolean;
   dataTest?: string;
   placement?: TooltipProps["placement"];
   title?: ReactNode;
